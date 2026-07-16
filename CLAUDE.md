@@ -2,11 +2,20 @@
 
 ## Estado atual do repositório
 - `index.html` e `em-breve.html` são a página "em breve" (splash), atualmente **iguais** — o restaurante já está aberto, mas o site completo ainda não foi construído aqui.
+- Botão "Fazer Reserva" na página "em breve" liga para `https://reserve.dish.co/347019` (ver secção "Reservas — plataforma Dish" abaixo). Imagem de fundo fixa (não arrasta/bounce em mobile).
 - O site oficial multi-página (Conceito, Fado, Vinhos, Carta, Reservas) **ainda não existe como HTML neste repo**, mas já tem todo o copy escrito em `assets/js/i18n.js` em PT/EN/ES (chaves `nav.*`, `fado.*`, `splitpanel.vinhos.*`, `carta.*`, `vinhos.*`, `reservas.*`). Isto foi provavelmente feito noutro dispositivo e nunca chegou a ser sincronizado com páginas HTML reais — usar este ficheiro como base de conteúdo quando o site oficial for construído.
 - Domínio: **noemia.pt**
 - Contactos: R. do Duque, 21, 1200-158 Lisboa · (+351) 210 509 605 · noemia.contacto@gmail.com · @noemia_restaurante (Instagram)
 - Já existe ficha Google Business Profile / Google Maps verificada.
 - Fado ao vivo: sextas, sábados, domingos e segundas, 20h–23h.
+
+## Reservas — plataforma Dish
+- Sistema de reservas: **Dish** (reserve.dish.co).
+- Link direto (usado agora no botão "Fazer Reserva" da página "em breve"): `https://reserve.dish.co/347019`
+- Também foi enviado um **widget embutível** (script + `<div>`) para inserir o formulário de reservas diretamente numa página — não usado na página "em breve" (é um ecrã fixo de um só bloco, sem espaço/scroll para um widget completo), mas é a opção ideal para a futura página `/reservas` do site oficial, onde há espaço dedicado. Código a reaproveitar nessa altura:
+  ```html
+  <div id="hors-hydra-31c12010-b2c2-4fda-a51e-a3d2e9975b77"></div><script>	var _hors=[['eid','hydra-31c12010-b2c2-4fda-a51e-a3d2e9975b77'],['tagid','hors-hydra-31c12010-b2c2-4fda-a51e-a3d2e9975b77'],['width','100%'],['height',''],['foregroundColor',''],['backgroundColor',''],['linkColor',''],['errorColor',''],['primaryButtonForegroundColor',''],['primaryButtonBackgroundColor',''],['secondaryButtonForegroundColor',''],['secondaryButtonBackgroundColor','']];	(function(d, t) { var e=d.createElement(t),s=d.getElementsByTagName(t)[0];	e.src = "https://reservation.dish.co/widget.js";	s.parentNode.insertBefore(e,s);	}(document, 'script'));</script>
+  ```
 
 ## Objetivo de SEO
 Aparecer em 1º lugar nas pesquisas:
