@@ -458,12 +458,13 @@ h1, h2{ font-size: clamp(2rem, 3.4vw, 2.9rem); margin-bottom: 22px; }
 /* ==========================================================================
    EM BREVE (coming soon splash page)
    ========================================================================== */
-html:has(body.embreve-page){ height:100%; overscroll-behavior:none; }
-body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; touch-action: pan-x pan-y; }
+html:has(body.embreve-page){ overscroll-behavior:none; }
+body.embreve-page{ overscroll-behavior:none; }
 .embreve{
-  position: relative; height:100%;
-  display:flex; align-items:center; justify-content:center;
-  overflow:hidden; text-align:center;
+  position: relative; min-height:100dvh;
+  display:flex; flex-direction:column; align-items:center;
+  justify-content:center; justify-content: safe center;
+  text-align:center;
 }
 .embreve-langswitch{
   position:absolute; top: clamp(14px, 3vh, 22px); left:50%; transform: translateX(-50%); z-index:2;
@@ -471,11 +472,11 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
 }
 .embreve-langswitch .lang-btn{
   font-size: 1.35rem; line-height:1; padding: 4px 5px;
-  filter: grayscale(1); opacity:.55;
-  transition: filter .3s ease, opacity .3s ease, transform .3s ease;
+  opacity:.55;
+  transition: opacity .3s ease, transform .3s ease;
 }
-.embreve-langswitch .lang-btn:hover{ filter: grayscale(.4); opacity:.85; }
-.embreve-langswitch .lang-btn.is-active{ filter: grayscale(0); opacity:1; transform: scale(1.15); }
+.embreve-langswitch .lang-btn:hover{ opacity:.85; }
+.embreve-langswitch .lang-btn.is-active{ opacity:1; transform: scale(1.15); }
 .embreve-media{ position:fixed; inset:0; z-index:0; }
 .embreve-media img{
   width:100%; height:100%; object-fit: cover; object-position: center 30%;
@@ -488,7 +489,7 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
   position:relative; z-index:1;
   display:flex; flex-direction:column; align-items:center;
   max-width: 980px;
-  padding: clamp(20px, 5vh, 60px) 32px;
+  padding: clamp(48px, 9vh, 80px) 32px clamp(20px, 4vh, 32px);
   color: var(--texto-claro);
 }
 .embreve-logo{ width: min(170px, 38vw); margin-bottom: clamp(16px, 3vh, 28px); }
@@ -517,7 +518,10 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
 .embreve-info .info-value{ font-size: .9rem; color: rgba(244,238,225,.85); }
 .embreve-info .info-value a:hover{ color: var(--dourado); }
 .embreve-footer{
-  position:absolute; left:0; right:0; bottom: 18px; z-index:1;
+  position:relative; z-index:1;
+  margin-top: clamp(16px, 3vh, 28px);
+  padding: 0 20px;
+  padding-bottom: max(18px, env(safe-area-inset-bottom));
   text-align:center;
 }
 .embreve-tagline{
