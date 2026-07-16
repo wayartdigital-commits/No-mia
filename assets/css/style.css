@@ -466,8 +466,16 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
   overflow:hidden; text-align:center;
 }
 .embreve-langswitch{
-  position:absolute; top: clamp(14px, 3vh, 22px); right: clamp(16px, 4vw, 28px); z-index:2;
+  position:absolute; top: clamp(14px, 3vh, 22px); left:50%; transform: translateX(-50%); z-index:2;
+  display:flex; gap: 10px;
 }
+.embreve-langswitch .lang-btn{
+  font-size: 1.35rem; line-height:1; padding: 4px 5px;
+  filter: grayscale(1); opacity:.55;
+  transition: filter .3s ease, opacity .3s ease, transform .3s ease;
+}
+.embreve-langswitch .lang-btn:hover{ filter: grayscale(.4); opacity:.85; }
+.embreve-langswitch .lang-btn.is-active{ filter: grayscale(0); opacity:1; transform: scale(1.15); }
 .embreve-media{ position:fixed; inset:0; z-index:0; }
 .embreve-media img{
   width:100%; height:100%; object-fit: cover; object-position: center 30%;
