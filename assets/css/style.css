@@ -480,11 +480,7 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
   padding: clamp(20px, 5vh, 60px) 32px;
   color: var(--texto-claro);
 }
-.embreve-logo{ width: min(170px, 38vw); margin-bottom: clamp(6px, 1.5vh, 10px); }
-.embreve-tagline{
-  font-size: .78rem; letter-spacing:.14em; text-transform:uppercase;
-  color: rgba(244,238,225,.65); margin: 0 0 clamp(16px, 3vh, 28px);
-}
+.embreve-logo{ width: min(170px, 38vw); margin-bottom: clamp(16px, 3vh, 28px); }
 .embreve-icon{
   width: 50px; height: 50px; margin: 0 0 clamp(12px, 2.5vh, 20px); color: var(--dourado);
 }
@@ -509,10 +505,17 @@ body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; tou
 .embreve-info .info-label{ color: var(--dourado); }
 .embreve-info .info-value{ font-size: .9rem; color: rgba(244,238,225,.85); }
 .embreve-info .info-value a:hover{ color: var(--dourado); }
-.embreve-credit{
+.embreve-footer{
   position:absolute; left:0; right:0; bottom: 18px; z-index:1;
+  text-align:center;
+}
+.embreve-tagline{
+  font-size: .72rem; letter-spacing:.12em; text-transform:uppercase;
+  color: rgba(244,238,225,.5); margin: 0 0 4px;
+}
+.embreve-credit{
   font-size:.72rem; letter-spacing:.02em;
-  color: rgba(244,238,225,.4);
+  color: rgba(244,238,225,.4); margin:0;
 }
 
 @media (min-width: 700px){
