@@ -2,7 +2,7 @@
   "use strict";
 
   var LANG_KEY = "noemia-lang";
-  var HTML_LANG = { pt: "pt-PT", en: "en", es: "es" };
+  var HTML_LANG = { pt: "pt-PT", en: "en", es: "es", fr: "fr" };
 
   var translations = {
     pt: {
@@ -13,6 +13,12 @@
       "meta.description.carta": "A carta completa do Noémia: couvert, tapas, tibornas e cachorros para partilhar à mesa.",
       "meta.title.vinhos": "Carta de Vinhos · Noémia",
       "meta.description.vinhos": "A carta de vinhos completa do Noémia: tintos, brancos, rosés e verdes de produtores portugueses.",
+
+      "embreve.langswitch.aria": "Mudar idioma",
+      "embreve.eyebrow": "Já estamos abertos",
+      "embreve.heading": "O site ainda está a decantar!",
+      "embreve.tagline": "Restaurante de Vinhos, Tapas e Fados em Lisboa",
+      "embreve.cta.reserva": "Fazer Reserva",
 
       "nav.conceito": "Conceito",
       "nav.fado": "Fado",
@@ -128,6 +134,12 @@
       "meta.title.vinhos": "Wine List · Noémia",
       "meta.description.vinhos": "Noémia's full wine list: reds, whites, rosés and vinho verdes from Portuguese producers.",
 
+      "embreve.langswitch.aria": "Change language",
+      "embreve.eyebrow": "We're already open",
+      "embreve.heading": "The website is still decanting!",
+      "embreve.tagline": "Restaurant of Wine, Tapas and Fado in Lisbon",
+      "embreve.cta.reserva": "Book a Table",
+
       "nav.conceito": "Concept",
       "nav.fado": "Fado",
       "nav.vinhos": "Wines",
@@ -242,6 +254,12 @@
       "meta.title.vinhos": "Carta de Vinos · Noémia",
       "meta.description.vinhos": "La carta de vinos completa de Noémia: tintos, blancos, rosados y verdes de productores portugueses.",
 
+      "embreve.langswitch.aria": "Cambiar idioma",
+      "embreve.eyebrow": "Ya estamos abiertos",
+      "embreve.heading": "¡El sitio web todavía está decantando!",
+      "embreve.tagline": "Restaurante de Vinos, Tapas y Fado en Lisboa",
+      "embreve.cta.reserva": "Reservar Mesa",
+
       "nav.conceito": "Concepto",
       "nav.fado": "Fado",
       "nav.vinhos": "Vinos",
@@ -345,6 +363,126 @@
       "cat.brancos": "Blancos",
       "cat.rose": "Rosados",
       "cat.verdes": "Verdes"
+    },
+
+    fr: {
+      "meta.tagline": "Noémia · Vins, Tapas et Fado",
+      "meta.title.index": "Noémia · Vins, Tapas et Fado",
+      "meta.description.index": "Noémia : tapas portugaises simples et rapides, vins de qualité et soirées de fado. Réservez votre table.",
+      "meta.title.carta": "La Carte · Noémia",
+      "meta.description.carta": "La carte complète de Noémia : couvert, tapas, tibornas et hot-dogs à partager à table.",
+      "meta.title.vinhos": "Carte des Vins · Noémia",
+      "meta.description.vinhos": "La carte des vins complète de Noémia : rouges, blancs, rosés et vinho verde de producteurs portugais.",
+
+      "embreve.langswitch.aria": "Changer de langue",
+      "embreve.eyebrow": "Nous sommes déjà ouverts",
+      "embreve.heading": "Le site est encore en train de décanter !",
+      "embreve.tagline": "Restaurant de Vins, Tapas et Fado à Lisbonne",
+      "embreve.cta.reserva": "Réserver une Table",
+
+      "nav.conceito": "Concept",
+      "nav.fado": "Fado",
+      "nav.vinhos": "Vins",
+      "nav.carta": "Carte",
+      "nav.reservas": "Réservations",
+      "nav.reservar": "Réserver",
+      "nav.toggle.aria": "Ouvrir le menu",
+      "back.link": "Retour à Noémia",
+      "cta.reservarmesa": "Réserver une Table",
+      "footer.text": "Noémia · Vins, Tapas et Fado. Tous droits réservés.",
+
+      "hero.img.alt": "Salle de Noémia avec des hirondelles peintes au plafond et un lustre en cristal",
+      "hero.cta.vermenu": "Voir le Menu",
+
+      "conceito.eyebrow": "Le Concept",
+      "conceito.heading": "Simple, bon,<br>sans hâte de finir.",
+      "conceito.lead": "Noémia propose une cuisine portugaise préparée avec soin, pensée pour être partagée sous forme de tapas, sans cérémonie, sans attente. De petits plats à accompagner d'un verre de vin de notre cave entièrement portugaise, dans une salle qui invite à rester jusqu'à ce que la nuit se transforme en fado.",
+
+      "pillar.tapas.title": "Tapas",
+      "pillar.tapas.desc": "Petiscos portugais servis à partager. Simples, savoureux, sans attente.",
+      "pillar.tapas.link": "Voir la carte",
+      "pillar.vinho.title": "Vin",
+      "pillar.vinho.desc": "Cave propre, avec des producteurs portugais du Douro à l'Alentejo.",
+      "pillar.vinho.link": "Voir les vins",
+      "pillar.fado.title": "Fado",
+      "pillar.fado.desc": "Des soirées où la musique rejoint la table, sans scène, sans distance.",
+      "pillar.fado.link": "Écouter plus",
+
+      "img.alt.salavinhos": "Salle intérieure de Noémia avec cave à vin et tables de restaurant",
+      "img.alt.decorvintage": "Nature morte avec une bouteille de rosé et des conserves portugaises",
+
+      "fado.img.alt": "Fadista avec guitare portugaise lors d'une soirée de fado à Noémia",
+      "fado.eyebrow": "Fado",
+      "fado.heading": "Quand la nuit appelle le fado",
+      "fado.lead": "Entre des verres pas encore terminés et des conversations sans hâte, Noémia garde des soirées où le fado se passe tout près, sans scène, sans distance, juste la voix et la guitare portugaise résonnant juste à côté de la table.",
+      "fado.note": "Fado en direct les vendredis, samedis, dimanches et lundis, de 20h00 à 23h00.",
+
+      "splitpanel.vinhos.img.alt": "Mur de bouteilles de vin exposées chez Noémia",
+      "splitpanel.vinhos.title": "Vins",
+      "splitpanel.vinhos.desc": "Des dizaines de références portugaises, rouges, blancs, rosés et vinho verde, choisies avec soin pour accompagner chaque petisco. Du Douro à l'Alentejo, de la Bairrada à Monção et Melgaço.",
+      "wine.stat.referencias": "Références",
+      "wine.stat.regioes": "Régions",
+      "wine.stat.nacionais": "Portugais",
+      "splitpanel.vinhos.cta": "Voir la Carte des Vins",
+      "splitpanel.tapas.img.alt": "Sélection de tapas et conserves portugaises avec du vin",
+      "splitpanel.tapas.title": "Tapas",
+      "splitpanel.tapas.desc": "Du couvert aux hot-dogs, en passant par les tibornas, des petits plats pensés pour arriver rapidement et être partagés à table, entre un verre de vin et un autre.",
+      "splitpanel.tapas.cta": "Voir le Menu Complet",
+
+      "reservas.eyebrow": "Réservations",
+      "reservas.heading": "Réservez votre table",
+      "reservas.lead": "Appelez-nous ou envoyez un message, ce sera un plaisir de vous accueillir pour une soirée de tapas, vin et fado.",
+      "reservas.cta": "Réserver par téléphone",
+      "reservas.label.morada": "Adresse",
+      "reservas.label.telefone": "Téléphone",
+      "reservas.label.email": "E-mail",
+      "reservas.label.horario": "Horaires",
+      "reservas.label.instagram": "Instagram",
+
+      "carta.eyebrow": "La Carte",
+      "carta.heading": "Tapas à partager",
+
+      "cat.couvert": "Couvert",
+      "cat.tapas": "Tapas",
+      "cat.tibornas": "Tibornas",
+      "cat.cachorros": "Hot-dogs",
+
+      "item.pao": "Pain",
+      "item.azeitonas": "Olives",
+      "item.manteigacabra": "Beurre de chèvre",
+      "item.presunto": "Jambon cru et fromage crémeux",
+      "item.vieiras": "Noix de Saint-Jacques poêlées, purée de céleri et jambon cru",
+      "item.gambas": "Gambas frites, sauce piri-piri",
+      "item.picadinho": "Émincé de filet avec pickles",
+      "item.camembert": "Camembert fondu, épices et confiture de figues",
+      "item.mistoqueijos": "Assortiment de fromages portugais, fruits secs et confiture",
+      "item.crumble": "Crumble de boudin noir avec pomme rôtie",
+      "item.charuto": "Rouleau d'alheira avec purée d'épinards",
+      "item.migas": "Migas au bacon avec asperges et œuf au plat",
+      "item.atum": "Thon saisi en croûte de sésame, sauce à l'avocat",
+      "item.mistolegumes": "Assortiment de légumes grillés, sauce aigre-douce",
+      "item.beterraba": "Betterave avec fromage feta et fenouil",
+      "item.bacalhaufumado": "Morue fumée en lamelles, câpres, persil et huile d'olive",
+      "item.carpaccio": "Carpaccio de poire, foie gras caramélisé et miel",
+      "item.peixebranco": "Poisson blanc mariné, pamplemousse, citron et fenouil",
+      "item.empada": "Tourte XL (poulet ou canard)",
+      "item.queijoserra": "Fromage da Serra, champignons et jambon cru",
+      "item.polvo": "Poulpe, purée de carotte, vinaigrette à la coriandre et à la moutarde",
+      "item.camarao": "Crevettes sautées, sauce à la mangue",
+      "item.bacalhaulascado": "Morue effilochée, houmous et œuf dur",
+      "item.tomatemozz": "Tomate et mozzarella au basilic",
+      "item.ovosmexidos": "Œufs brouillés avec asperges et fromage da Ilha (Açores)",
+      "item.sardinha": "Sardine confite, confiture de poivrons",
+      "item.foiegras": "Foie gras et purée de pomme, pain brioché",
+      "item.pernil": "Jarret de porc, pickles et mayonnaise à la menthe",
+      "item.lavagante": "Homard, crème aigre et céleri",
+
+      "vinhos.eyebrow": "Carte des Vins",
+      "vinhos.heading": "Une cave qui raconte des histoires",
+      "cat.tintos": "Rouges",
+      "cat.brancos": "Blancs",
+      "cat.rose": "Rosé",
+      "cat.verdes": "Vinho Verde"
     }
   };
 

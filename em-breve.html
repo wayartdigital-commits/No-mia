@@ -3,9 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site em construção · Noémia</title>
-<meta name="description" content="O Noémia já está aberto. O novo site está em construção — venha à nossa mesa entretanto.">
-<meta name="robots" content="noindex">
+<title>Noémia · Restaurante de Vinhos, Tapas e Fados em Lisboa</title>
+<meta name="description" content="Noémia: restaurante em Lisboa com tapas portuguesas, garrafeira nacional e noites de fado ao vivo. Já estamos abertos na R. do Duque, 21 — reserve a sua mesa.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://noemia.pt/">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Noémia">
+<meta property="og:title" content="Noémia · Restaurante de Vinhos, Tapas e Fados em Lisboa">
+<meta property="og:description" content="Tapas portuguesas, garrafeira nacional e noites de fado ao vivo no coração de Lisboa. Já estamos abertos — reserve a sua mesa.">
+<meta property="og:url" content="https://noemia.pt/">
+<meta property="og:image" content="https://noemia.pt/assets/img/parede-vinhos.jpg">
+<meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Noémia · Restaurante de Vinhos, Tapas e Fados em Lisboa">
+<meta name="twitter:description" content="Tapas portuguesas, garrafeira nacional e noites de fado ao vivo no coração de Lisboa.">
+<meta name="twitter:image" content="https://noemia.pt/assets/img/parede-vinhos.jpg">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
@@ -15,6 +28,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!--
+  NOTA PARA O CLIENTE: preencher/confirmar estes dados quando forem conhecidos
+  (horário completo do restaurante, faixa de preço) e voltar a validar o
+  JSON-LD em https://search.google.com/test/rich-results
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Noémia",
+  "alternateName": "Noémia Vinhos, Tapas e Fados",
+  "image": "https://noemia.pt/assets/img/parede-vinhos.jpg",
+  "logo": "https://noemia.pt/assets/logo/apple-touch-icon.png",
+  "url": "https://noemia.pt/",
+  "telephone": "+351210509605",
+  "email": "noemia.contacto@gmail.com",
+  "servesCuisine": ["Portuguesa", "Tapas", "Vinhos"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. do Duque, 21",
+    "postalCode": "1200-158",
+    "addressLocality": "Lisboa",
+    "addressCountry": "PT"
+  },
+  "sameAs": [
+    "https://instagram.com/noemia_restaurante"
+  ]
+}
+</script>
 </head>
 <body class="embreve-page">
 
@@ -30,8 +73,15 @@
 <div class="grain"></div>
 
 <div class="embreve">
+  <div class="embreve-langswitch lang-switch" role="group" data-i18n-aria-label="embreve.langswitch.aria" aria-label="Mudar idioma">
+    <button type="button" class="lang-btn" data-lang="pt" aria-label="Português" title="Português">🇵🇹</button>
+    <button type="button" class="lang-btn" data-lang="en" aria-label="English" title="English">🇬🇧</button>
+    <button type="button" class="lang-btn" data-lang="es" aria-label="Español" title="Español">🇪🇸</button>
+    <button type="button" class="lang-btn" data-lang="fr" aria-label="Français" title="Français">🇫🇷</button>
+  </div>
+
   <div class="embreve-media">
-    <img src="assets/img/parede-vinhos.jpg" alt="Parede de garrafas de vinho expostas no Noémia" loading="eager">
+    <img src="assets/img/parede-vinhos.jpg" alt="Parede de garrafas de vinho expostas no Noémia" data-i18n-alt="splitpanel.vinhos.img.alt" loading="eager">
     <div class="embreve-overlay"></div>
   </div>
 
@@ -40,32 +90,38 @@
 
     <svg class="embreve-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1 6a3 3 0 0 1-3 3 3 3 0 0 1-3-3L8 3z"/><path d="M12 12v6"/><path d="M9 21h6"/></svg>
 
-    <p class="embreve-eyebrow">Já estamos abertos</p>
-    <h1 class="embreve-heading">O site ainda está a decantar!</h1>
+    <p class="embreve-eyebrow" data-i18n="embreve.eyebrow">Já estamos abertos</p>
+    <h1 class="embreve-heading" data-i18n="embreve.heading">O site ainda está a decantar!</h1>
+
+    <a href="https://reserve.dish.co/347019" target="_blank" rel="noopener" class="btn btn-outline-light embreve-cta" data-i18n="embreve.cta.reserva">Fazer Reserva</a>
 
     <div class="embreve-info">
       <div class="info-block">
-        <span class="info-label">Morada</span>
+        <span class="info-label" data-i18n="reservas.label.morada">Morada</span>
         <span class="info-value">R. do Duque, 21, 1200-158 Lisboa</span>
       </div>
       <div class="info-block">
-        <span class="info-label">Telefone</span>
+        <span class="info-label" data-i18n="reservas.label.telefone">Telefone</span>
         <span class="info-value"><a href="tel:+351210509605">(+351) 210 509 605</a></span>
       </div>
       <div class="info-block">
-        <span class="info-label">Email</span>
+        <span class="info-label" data-i18n="reservas.label.email">Email</span>
         <span class="info-value"><a href="mailto:noemia.contacto@gmail.com">noemia.contacto@gmail.com</a></span>
       </div>
       <div class="info-block">
-        <span class="info-label">Instagram</span>
+        <span class="info-label" data-i18n="reservas.label.instagram">Instagram</span>
         <span class="info-value"><a href="https://instagram.com/noemia_restaurante" target="_blank" rel="noopener">@noemia_restaurante</a></span>
       </div>
     </div>
   </div>
 
-  <p class="embreve-credit">&copy; <span id="year"></span> Noémia · Vinhos, Tapas e Fados</p>
+  <div class="embreve-footer">
+    <p class="embreve-tagline" data-i18n="embreve.tagline">Restaurante de Vinhos, Tapas e Fados em Lisboa</p>
+    <p class="embreve-credit">&copy; <span id="year"></span> <span data-i18n="meta.tagline">Noémia · Vinhos, Tapas e Fados</span></p>
+  </div>
 </div>
 
+<script src="assets/js/i18n.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
