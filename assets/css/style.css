@@ -509,13 +509,13 @@ body.embreve-page{ overscroll-behavior:none; }
 .embreve-cta{ margin: 0 0 clamp(28px, 5vh, 40px); }
 
 .embreve-info{
-  display:flex; flex-wrap:wrap; justify-content:center; gap: clamp(16px, 3vh, 24px) 36px;
+  display:grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 2.5vh, 20px) 16px;
   width:100%; padding-top: clamp(16px, 3vh, 24px);
   border-top: 1px solid rgba(244,238,225,.2);
 }
-.embreve-info .info-block{ align-items:center; }
-.embreve-info .info-label{ color: var(--dourado); }
-.embreve-info .info-value{ font-size: .9rem; color: rgba(244,238,225,.85); }
+.embreve-info .info-block{ align-items:center; gap:3px; }
+.embreve-info .info-label{ color: var(--dourado); font-size:.62rem; }
+.embreve-info .info-value{ font-size: .78rem; color: rgba(244,238,225,.85); }
 .embreve-info .info-value a:hover{ color: var(--dourado); }
 .embreve-footer{
   position:relative; z-index:1;
@@ -534,12 +534,10 @@ body.embreve-page{ overscroll-behavior:none; }
 }
 
 @media (min-width: 700px){
-  .embreve-info{ flex-wrap: nowrap; justify-content: space-between; }
-  .embreve-info .info-block{ white-space:nowrap; }
-}
-
-@media (max-width: 600px){
-  .embreve-info{ gap: clamp(14px, 2.5vh, 20px) 30px; }
+  .embreve-info{ grid-template-columns: repeat(4, auto); justify-content: space-between; gap: clamp(16px, 3vh, 24px) 36px; }
+  .embreve-info .info-block{ white-space:nowrap; gap:6px; }
+  .embreve-info .info-label{ font-size:.72rem; }
+  .embreve-info .info-value{ font-size:.9rem; }
 }
 
 @media (max-height: 680px){
