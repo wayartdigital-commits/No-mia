@@ -458,14 +458,14 @@ h1, h2{ font-size: clamp(2rem, 3.4vw, 2.9rem); margin-bottom: 22px; }
 /* ==========================================================================
    EM BREVE (coming soon splash page)
    ========================================================================== */
-html:has(body.embreve-page){ height:100%; }
-body.embreve-page{ height:100dvh; overflow:hidden; }
+html:has(body.embreve-page){ height:100%; overscroll-behavior:none; }
+body.embreve-page{ height:100dvh; overflow:hidden; overscroll-behavior:none; touch-action: pan-x pan-y; }
 .embreve{
   position: relative; height:100%;
   display:flex; align-items:center; justify-content:center;
   overflow:hidden; text-align:center;
 }
-.embreve-media{ position:absolute; inset:0; z-index:0; }
+.embreve-media{ position:fixed; inset:0; z-index:0; }
 .embreve-media img{
   width:100%; height:100%; object-fit: cover; object-position: center 30%;
 }
@@ -494,6 +494,8 @@ body.embreve-page{ height:100dvh; overflow:hidden; }
   font-size: clamp(1.05rem, 2.1vw, 1.6rem); line-height:1.3;
   margin:0 0 clamp(28px, 5vh, 44px);
 }
+.embreve-cta{ margin: 0 0 clamp(28px, 5vh, 40px); }
+
 .embreve-info{
   display:flex; flex-wrap:wrap; justify-content:center; gap: clamp(16px, 3vh, 24px) 36px;
   width:100%; padding-top: clamp(16px, 3vh, 24px);
