@@ -14,6 +14,12 @@
       "meta.title.vinhos": "Carta de Vinhos · Noémia",
       "meta.description.vinhos": "A carta de vinhos completa do Noémia: tintos, brancos, rosés e verdes de produtores portugueses.",
 
+      "embreve.langswitch.aria": "Mudar idioma",
+      "embreve.eyebrow": "Já estamos abertos",
+      "embreve.heading": "O site ainda está a decantar!",
+      "embreve.tagline": "Restaurante de Vinhos, Tapas e Fados em Lisboa",
+      "embreve.cta.reserva": "Fazer Reserva",
+
       "nav.conceito": "Conceito",
       "nav.fado": "Fado",
       "nav.vinhos": "Vinhos",
@@ -128,6 +134,12 @@
       "meta.title.vinhos": "Wine List · Noémia",
       "meta.description.vinhos": "Noémia's full wine list: reds, whites, rosés and vinho verdes from Portuguese producers.",
 
+      "embreve.langswitch.aria": "Change language",
+      "embreve.eyebrow": "We're already open",
+      "embreve.heading": "The website is still decanting!",
+      "embreve.tagline": "Restaurant of Wine, Tapas and Fado in Lisbon",
+      "embreve.cta.reserva": "Book a Table",
+
       "nav.conceito": "Concept",
       "nav.fado": "Fado",
       "nav.vinhos": "Wines",
@@ -241,6 +253,12 @@
       "meta.description.carta": "La carta completa de Noémia: couvert, tapas, tibornas y perritos calientes para compartir en la mesa.",
       "meta.title.vinhos": "Carta de Vinos · Noémia",
       "meta.description.vinhos": "La carta de vinos completa de Noémia: tintos, blancos, rosados y verdes de productores portugueses.",
+
+      "embreve.langswitch.aria": "Cambiar idioma",
+      "embreve.eyebrow": "Ya estamos abiertos",
+      "embreve.heading": "¡El sitio web todavía está decantando!",
+      "embreve.tagline": "Restaurante de Vinos, Tapas y Fado en Lisboa",
+      "embreve.cta.reserva": "Reservar Mesa",
 
       "nav.conceito": "Concepto",
       "nav.fado": "Fado",
