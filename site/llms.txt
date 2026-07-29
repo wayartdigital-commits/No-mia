@@ -1,0 +1,22 @@
+# Noémia
+
+> Noémia is a restaurant in Lisbon, Portugal, serving Portuguese tapas and wines, with live fado performances several nights a week.
+
+- Address: R. do Duque, 21, 1200-158 Lisboa, Portugal
+- Phone: +351 210 509 605
+- Email: noemia.contacto@gmail.com
+- Instagram: https://www.instagram.com/noemia_restaurante/
+- Price range: €€ (moderate)
+- Cuisine: Portuguese tapas and wine
+- Opening hours: Thursday 18:00–23:00; Friday to Monday 19:00–23:00; closed Tuesday and Wednesday
+- Live fado: every 30 minutes, Friday to Monday, 20:00–23:00, performed by the house group (Grupo da Casa)
+- Reservations: https://reserve.dish.co/347019
+
+## Pages
+
+- [Home (Portuguese)](https://noemia.pt/): concept, fado, wine and tapas overview, reservations, FAQ
+- [Home (English)](https://noemia.pt/en/): same content in English
+- [Tapas menu (Portuguese)](https://noemia.pt/carta.html)
+- [Tapas menu (English)](https://noemia.pt/en/carta.html)
+- [Wine list (Portuguese)](https://noemia.pt/vinhos.html)
+- [Wine list (English)](https://noemia.pt/en/vinhos.html)
