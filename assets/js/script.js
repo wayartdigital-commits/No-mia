@@ -3,15 +3,52 @@
 
   // Header background on scroll
   var header = document.querySelector(".site-header");
+  var ctaBar = document.querySelector(".mobile-cta-bar");
   var onScroll = function () {
     if (window.scrollY > 40) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
     }
+    if (ctaBar) {
+      ctaBar.classList.toggle("is-visible", window.scrollY > 400);
+    }
   };
   document.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  // Cookie consent banner
+  var COOKIE_CONSENT_KEY = "noemia-cookie-consent";
+  var cookieBanner = document.getElementById("cookie-banner");
+  var cookieAccept = document.getElementById("cookie-accept");
+  if (cookieBanner && cookieAccept) {
+    var hasConsent = false;
+    try {
+      hasConsent = window.localStorage.getItem(COOKIE_CONSENT_KEY) === "1";
+    } catch (e) {}
+    if (!hasConsent) {
+      window.requestAnimationFrame(function () {
+        cookieBanner.classList.add("is-visible");
+      });
+    }
+    cookieAccept.addEventListener("click", function () {
+      try {
+        window.localStorage.setItem(COOKIE_CONSENT_KEY, "1");
+      } catch (e) {}
+      cookieBanner.classList.remove("is-visible");
+    });
+  }
+
+  // Hero: auto-advancing background slideshow, 3.5s per photo
+  var heroSlides = document.querySelectorAll(".hero-slide");
+  if (heroSlides.length > 1) {
+    var heroIndex = 0;
+    setInterval(function () {
+      heroSlides[heroIndex].classList.remove("is-active");
+      heroIndex = (heroIndex + 1) % heroSlides.length;
+      heroSlides[heroIndex].classList.add("is-active");
+    }, 3500);
+  }
 
   // Mobile nav toggle
   var toggle = document.getElementById("nav-toggle");
